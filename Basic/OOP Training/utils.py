@@ -250,6 +250,7 @@ def Hud():
                 print("{0:30}".format(lines))
 
         sleep(3)
+        #os.system("clear")
         os.system("cls")
 
 
