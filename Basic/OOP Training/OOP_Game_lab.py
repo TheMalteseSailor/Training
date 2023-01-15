@@ -58,7 +58,7 @@ def main():
 
     utils.LaunchHud()
     
-    print("Narration - At the entrance of the frightful dungeon you see a piece of partchment on the ground.")
+    print("Narration - At the entrance of the frightful dungeon you see a piece of parchment on the ground.")
     time.sleep(2)
     print("Narration - You pick it up and read it.")
 
