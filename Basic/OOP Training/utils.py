@@ -35,7 +35,7 @@ def produce_room_template(room_number):
     #print()
     return room
 
-def loot_drop(scenrio):
+def loot_drop(scenario):
     # this will be a general function to handle the dropping of loot in a space by an enemy of treasure chest.
     pass
 
