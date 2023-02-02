@@ -122,7 +122,7 @@ class Hero():
     # need storage
     def __init__(self, name):
         self.name = name
-        self. create_hero_json_object()
+        self.create_hero_json_object()
         self.write_hero_object_to_disk()
 
     def create_hero_json_object(self):
