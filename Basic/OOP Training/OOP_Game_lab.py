@@ -5,7 +5,7 @@ import utils
 import time
 import os
 
-class scenerio():
+class scenario():
     def __init__(self, name):
         self.realm_name = "Kingdom of Derp"
         self.hero_name = name
@@ -44,8 +44,8 @@ def main():
         print("Since you can't get your name figured out You shouldn't embark on this quest. Bye.")
         exit(-1)
 
-    # intantiate scenerio object here
-    world = scenerio(name)
+    # intantiate scenario object here
+    world = scenario(name)
     # I need to build a dictionary that can be saved to disk with all the important HUD related details via json.
     
     print("Old man -- Welcome {0}! The land is in great danger!".format(name))
