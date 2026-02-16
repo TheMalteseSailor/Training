@@ -1,3 +1,5 @@
+# Network Encryption
+
 Since RC4 is a stream cipher both sides of the communications need to be aware of where in the stream the cipher is. If either side loses track of the location they become desynchronized. This can be solved in two ways:
 	1. Including the KeyId in the message.
 	2. Resetting the stream with each session/message. 
