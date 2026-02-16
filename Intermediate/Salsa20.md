@@ -1,3 +1,4 @@
+# Salsa20
 **Salsa20** is a high-speed symmetric stream cipher designed by Daniel J. Bernstein in 2005. It was a finalist in the European eSTREAM project, a competition created to find modern, efficient alternatives to older ciphers like RC4. 
 
 ### How Salsa20 Works
