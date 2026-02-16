@@ -32,7 +32,12 @@ Modern systems like HTTPS or VPNs use both:
 
 
 
-- [RC4](RC4.md)
-- [Salsa20](Salsa20.md)
-- [AES](AES.md)
-- [Network Encryption](Network%20Encryption.md)
+
+
+[RC4](RC4.md)
+
+[Salsa20](Salsa20.md)
+
+[AES](AES.md)
+
+[Network Encryption](Network%20Encryption.md)
