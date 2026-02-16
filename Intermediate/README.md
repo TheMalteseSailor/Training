@@ -1,6 +1,6 @@
 
 # Welcome
-These documents are part of a larger introduction to malware reverse engineering.
+These documents are part of a larger introduction to malware reverse engineering. Start by making your way through the encryption material.
 
 - [Encryption](Encryption.md)
 	- [RC4](RC4.md)
