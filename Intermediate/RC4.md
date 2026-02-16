@@ -1,3 +1,4 @@
+# RC4
 **RC4** (Rivest Cipher 4) is a **symmetric stream cipher** designed by Ron Rivest in 1987. Once the most widely used stream cipher in the world, it is renowned for its remarkable **simplicity and speed**. 
 
 ### How RC4 Works
