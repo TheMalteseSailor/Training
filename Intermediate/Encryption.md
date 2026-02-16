@@ -1,3 +1,4 @@
+# Encryption
 What is the difference between encryption and encoding?
 
 #### Definitions
