@@ -99,5 +99,5 @@ Because the receiver needs the IV to know which "starting point" the sender used
 ```
 
 
-Home: [[Welcome]]
+Home: [Welcome](Welcome.md)
 

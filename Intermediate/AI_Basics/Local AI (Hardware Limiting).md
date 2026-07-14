@@ -137,4 +137,4 @@ When you minimize Guardrails (safety filters, logit biases, or repetition penalt
 - **Logic Drift**: In "Thinking" models, if the Inner Monologue loses its guardrails, it will "hallucinate" its own logic, creating a pivot that never ends, eventually causing the UI or the backend to time out.
 
 
-Next: [[Writing Basic Malware with Local AI]]
+Next: [Writing Basic Malware with Local AI](Writing%20Basic%20Malware%20with%20Local%20AI.md)

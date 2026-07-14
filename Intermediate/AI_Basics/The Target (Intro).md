@@ -46,4 +46,4 @@ A logic bug is a bug or failure in the logic of a target software that allows an
 Most start their journey looking for memory bugs and quickly drown in ocean of subjects they must be proficient in, skills they need to master, and the never ending tools designed to make things "easier". Just realize that there is no "easy" way through this process. You must pay your dues to yourself to see any return on investment. No tool, script, class, or tutorial will usher you to a life of passive success. Only through your frustration and overcoming will you attain your goals. 
 
 
-Next: [[The Target (White box)]]
+Next: [The Target (White box)](The%20Target%20%28White%20box%29.md)

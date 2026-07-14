@@ -255,4 +255,4 @@ int main() {
 
 **Security Note**: For real-world use, ensure your nonces are unique for every message to prevent keystream reuse attacks.
 
-Next: [[AES]]
+Next: [AES](AES.md)

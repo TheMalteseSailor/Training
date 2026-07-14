@@ -310,5 +310,5 @@ int main() {
 - **Static Tables**: The **S-box** is stored as a static const array, ensuring it resides in the program's read-only memory rather than taking up stack space.
 - **Bit Manipulation**: Operations like xtime (used in MixColumns) are handled via direct bit shifting and XORing, which is much faster than Python's integer math. 
 
-Next: [[Network Encryption]]
+Next: [Network Encryption](Network%20Encryption.md)
 

@@ -91,6 +91,6 @@ A typical inner monologue follows a structured cognitive flow often guided by Sy
 
 
 **Example of thinking loop displayed**
-![[Pasted image 20260303200427.png]]
+![Pasted image 20260303200427.png](Pasted%20image%2020260303200427.png)
 
-Next: [[Local AI (Hardware Limiting)]]
+Next: [Local AI (Hardware Limiting)](Local%20AI%20%28Hardware%20Limiting%29.md)

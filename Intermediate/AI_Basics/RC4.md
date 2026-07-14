@@ -192,4 +192,4 @@ int main() {
 YouTube video from OALabs: "Reverse Engineering RC4 Crypto For Malware Analysis"
 https://www.youtube.com/watch?v=CiJocXXMXK4
 
-Next: [[Salsa20]]
+Next: [Salsa20](Salsa20.md)

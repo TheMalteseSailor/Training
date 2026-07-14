@@ -49,9 +49,9 @@ Where should you go to learn more?
 				1. A GUI interface may be exactly what you need early on, but it also may not scale as hoped for when your project is deployed.
 	3. Read company websites
 		1. Especially, earlier on in your learning in the higher level topics, many companies will offer basic free information that is extremely well written.
-			1. [[Detailed LLM Parameter Guide]]
+			1. [Detailed LLM Parameter Guide](Detailed%20LLM%20Parameter%20Guide.md)
 
 
 ### Let's get started!
 
-[[Local AI (The Basics)]]
+[Local AI (The Basics)](Local%20AI%20%28The%20Basics%29.md)

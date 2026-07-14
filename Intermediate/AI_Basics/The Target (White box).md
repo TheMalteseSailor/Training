@@ -1,4 +1,4 @@
-Back: [[The Target (Setup)]]
+Back: [The Target (Setup)](The%20Target%20%28Setup%29.md)
 ## Looking At The Code
 
 We're going to start looking at the Server component. 
@@ -333,7 +333,7 @@ If we had all of this information, we might be able to skip a large portion of t
 
 Since the white box and black box sections overlap at this point, I'll break here and integrate it into the black box section.
 
-Next: [[The Target (Black box)]]
+Next: [The Target (Black box)](The%20Target%20%28Black%20box%29.md)
 
 
 

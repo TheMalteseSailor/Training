@@ -12,7 +12,7 @@ It helps to think of them as a hierarchy.
 ###### 1. Neural Networks:
 A neural network is a type of AI modeled loosely after the human brain. Data enters through an input layer, passes through one or more hidden layers where it is transformed, and emerges from an output layer as a prediction
 
-![[Pasted image 20260316120240.png]]
+![Pasted image 20260316120240.png](Pasted%20image%2020260316120240.png)
 (ganked from the internet)
 
 ###### 2. Transformers:
@@ -176,7 +176,7 @@ Most local models are 4-bit or 8-bit, down from the original 16-bit (FP16). This
 #### LMStudio Model Configuration
 
 
-![[Pasted image 20260313201541.png]]
+![Pasted image 20260313201541.png](Pasted%20image%2020260313201541.png)
 
-Next: [[Local AI (Experts)]]
+Next: [Local AI (Experts)](Local%20AI%20%28Experts%29.md)
 

@@ -1,5 +1,5 @@
 
-Back: [[The Target (White box)]]
+Back: [The Target (White box)](The%20Target%20%28White%20box%29.md)
 
 Though you're likely coming from the White box code, we're going to temporarily forget that for a short period and take a look at what the server.exe binary looks like in ghidra. 
 
@@ -18,7 +18,7 @@ The first thing you need to do when you get a binary into ghidra is to ensure yo
 
 The first thing I do when I am looking at a binary for the first time is to determine the main function or entry point, ie. main, entry, WINMAIN, DLLMAIN, etc. This includes any functions that are seen in procmon being called like in the event of a DLL having specific exports/ordinals called by another program. This can also be seen if the binary is imported by another binary and the function is seen being called. 
 
-![[Pasted image 20260228205557.png]]
+![Pasted image 20260228205557.png](Pasted%20image%2020260228205557.png)
 
 In this window you can see that I've located main. Since this is the Debug build, all of the function symbols (names) are present along with source file line annotations. You can see that the variable types in the decompilation window are descriptive and not what you'd normally see ie. int, char, undefined0. 
 
@@ -31,15 +31,15 @@ It is extremely easy to get lost down rabbit holes during this part of the analy
 
 The easiest way to prevent getting lost in the potential mess is to try and ascertain the most basic TCP protocol supported and locate it's socket accept function. If you're lucky the socket receive function will not be obfuscated, and you can look in the "Symbol Tree" window for that function.
 
-![[Pasted image 20260228211416.png]]
+![Pasted image 20260228211416.png](Pasted%20image%2020260228211416.png)
 
 Here we can see that this external reference has 2 cross-references (XREFs). This is an instance where the binary is importing a function from a DLL, in this instance that DLL is ws2_32.dll located in the Windows\System32 directory. 
 
-Note: Inside the source code when I used \#include <winsock2.h> this imported the header file that imported the needed windows socket DLLs in my binary. When I programmatically called the accept() function that the ws2_32.dll library exposed, the linker made the connection between my code and the system's DLL and added the needed code (and added the library into the Import Address Table (IAT)) so that the Windows Loader could modify the location of that function call at program initialization/start time. This process is not complex, but it is outside the scope of this training. Review the [[Building A Binary (Primer)]] for more information. 
+Note: Inside the source code when I used \#include <winsock2.h> this imported the header file that imported the needed windows socket DLLs in my binary. When I programmatically called the accept() function that the ws2_32.dll library exposed, the linker made the connection between my code and the system's DLL and added the needed code (and added the library into the Import Address Table (IAT)) so that the Windows Loader could modify the location of that function call at program initialization/start time. This process is not complex, but it is outside the scope of this training. Review the [Building A Binary (Primer)](Building%20A%20Binary%20%28Primer%29.md) for more information. 
 
 Since this program is written in C the execution flow is extremely simplistic and easy to follow. We can see that one of the XREFs is inside the main function. Double clicking the address beside main, in this instance it would be **1400121c8** in the main:1400121c8 seen.
 
-![[Pasted image 20260228212616.png]]
+![Pasted image 20260228212616.png](Pasted%20image%2020260228212616.png)
 
 We can now see in the decompilation window the call to accept. The local_1d10 is the pointer to socket and later we can see it's stored in an array. My goal is not to completely dissect the execution flow to write a report, academic paper, or professional blog post. I only need to know enough to understand the basic flow of data so I can start to build my testing harness. At this point, the execution flow and the expected data structure is straight forward. However, in a more complex environment, you may need to utilize dynamic analysist and bounce back and forth between static and dynamic to ascertain the state of data at a given point.
 
@@ -100,26 +100,26 @@ The decryption process will result in several function calls being made. In the 
 
 Below we can see the RC4 decrypt function being called on some data. Here it's easier to ascertain what's occurring because the debug symbols are present in the binary and the function is labeled. 
 
-![[Pasted image 20260314203148.png]]
+![Pasted image 20260314203148.png](Pasted%20image%2020260314203148.png)
 
 If programming is not your strong suit and reading the ghidra assigned variables is making tracing the code difficult, you can `Show Call Trees for accept`. This will show you a list of function call chains into and out from the targeted address. 
 
-![[Pasted image 20260314203026.png]]
+![Pasted image 20260314203026.png](Pasted%20image%2020260314203026.png)
 
-![[Pasted image 20260314203821.png]]
+![Pasted image 20260314203821.png](Pasted%20image%2020260314203821.png)
 
 
 As you can see here, there are no outgoing calls made from within the accept function. You need to go to the function containing the accept call that you're interested in and `Show Call Trees for 0x*******`. Below I go back to the function that contains the targeted accept function and right click on the first address of the containing function.
 
-![[Pasted image 20260314204224.png]]
+![Pasted image 20260314204224.png](Pasted%20image%2020260314204224.png)
 
 As you can now see, we can see all of the outgoing function calls within this function. We can see our accept function half way down the list. We can see a short ways down the recv() function being used to receive data from the client. 
 
-![[Pasted image 20260314204407.png]]
+![Pasted image 20260314204407.png](Pasted%20image%2020260314204407.png)
 
 If you read through the primer for RC4 you'll recognize what's occurring here. If not you're going to miss out in that I will simply say that we can see the hardcoded RC4 decryption string being used in the initialization of the decryption functionality. 
 
-![[Pasted image 20260314204618.png]]
+![Pasted image 20260314204618.png](Pasted%20image%2020260314204618.png)
 
 Now that we've nailed down the encryption method used and the static key used in the encryption, we need to ascertain what the server is doing with the data it has received and is now decrypted. 
 
@@ -135,7 +135,7 @@ In this instance we encounter a web UI. It's a python based web service that's u
 
 You should be attempting to set up the entire setup so you're testing against a true-enough running version of targeted software. The web UI below simply displays the decrypted data to the web page. This is great news. This opens up a whole additional world of potential exploit vectors.
 
-![[Pasted image 20260314210502.png]]
+![Pasted image 20260314210502.png](Pasted%20image%2020260314210502.png)
 
 
 taking a peek at the root webpage of the site, we see it's index.html. Let's take a look at it. 

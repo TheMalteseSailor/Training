@@ -57,4 +57,4 @@ The architecture consists of three core internal components:
 
 This is exceptionally important and valuable when running AI on local hardware. 
 
-Next: [[Local AI (Thinking)]]
+Next: [Local AI (Thinking)](Local%20AI%20%28Thinking%29.md)

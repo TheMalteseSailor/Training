@@ -1,23 +1,23 @@
 - Primers
-	- [[Encryption (Primers)]]
-		- [[RC4]]
-		- [[Salsa20]]
-		- [[AES]]
-		- [[Network Encryption]]
-	- [[Building A Binary (Primer)]]
+	- [Encryption (Primers)](Encryption%20%28Primers%29.md)
+		- [RC4](RC4.md)
+		- [Salsa20](Salsa20.md)
+		- [AES](AES.md)
+		- [Network Encryption](Network%20Encryption.md)
+	- [Building A Binary (Primer)](Building%20A%20Binary%20%28Primer%29.md)
 - Chapter 1: AI Fundamentals
-	- [[Local AI (Intro)]]
-	- [[Local AI (The Basics)]]
-	- [[Local AI (Experts)]]
-	- [[Local AI (Thinking)]]
-	- [[Local AI (Hardware Limiting)]]
-	- [[Writing Basic Malware with Local AI]]
-		- [[Detailed LLM Parameter Guide]]
+	- [Local AI (Intro)](Local%20AI%20%28Intro%29.md)
+	- [Local AI (The Basics)](Local%20AI%20%28The%20Basics%29.md)
+	- [Local AI (Experts)](Local%20AI%20%28Experts%29.md)
+	- [Local AI (Thinking)](Local%20AI%20%28Thinking%29.md)
+	- [Local AI (Hardware Limiting)](Local%20AI%20%28Hardware%20Limiting%29.md)
+	- [Writing Basic Malware with Local AI](Writing%20Basic%20Malware%20with%20Local%20AI.md)
+		- [Detailed LLM Parameter Guide](Detailed%20LLM%20Parameter%20Guide.md)
 - Chapter 2: RE Workflow Fundamentals
-	- [[The Target (Setup)]]
-	- [[The Target (Intro)]]
-	- [[The Target (White box)]]
-	- [[The Target (Black box)]]
+	- [The Target (Setup)](The%20Target%20%28Setup%29.md)
+	- [The Target (Intro)](The%20Target%20%28Intro%29.md)
+	- [The Target (White box)](The%20Target%20%28White%20box%29.md)
+	- [The Target (Black box)](The%20Target%20%28Black%20box%29.md)
 - Chapter 3: TBD
 
 I am **TheMalteseSailor** and welcome to this basic software reverse engineering and vulnerability research introductory training. This is not designed to be an all inclusive course, but a basic introduction to the concepts, workflows, and thought processes surrounding the process of finding software bugs and determining if they are exploitable. 
