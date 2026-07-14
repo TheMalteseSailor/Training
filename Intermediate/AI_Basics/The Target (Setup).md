@@ -12,9 +12,9 @@ This section will discuss and utilize a test server, client, and web UI.
 ### Setup (using bundled binaries)
 
 1. Open 3 terminals or cmd.exe windows
-2. unzip bundle 
+2. unzip bundle [TrainingCode.zip](TrainingCode.zip)
 ``` cmd
-cd TrainingMaterial\
+cd TrainingCode\
 ```
 3. In the window you want to run your local webserver in.
 ``` cmd
